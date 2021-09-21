@@ -37,27 +37,26 @@ class: title-slide, middle, center
 ## What&#39;s an algorithm
 
 * **Action**: an event that takes place in a finite period of time and produces
-  an expected and well-defined result.
-
+  an expected and well-defined result.  
+  &amp;nbsp;&amp;nbsp;
 --
 
-* **Information**: anything we can observe or find out about an action.
-
+* **Information**: anything we can observe or find out about an action.  
+  &amp;nbsp;&amp;nbsp;
 --
 
-* **State**: the information available at a given time point.
-
+* **State**: the information available at a given time point.  
+  &amp;nbsp;&amp;nbsp;
 --
 
 * **Algorithm**: sequence of actions starting at an initial state and ending at
   an end state, in which we obtain the result.
-
 --
 
-![:scale 60%](data:image/png;base64,#img/gestiocasoscovid19.png)
-
+![:scale 55%](data:image/png;base64,#img/gestiocasoscovid19.png)
 .footer[
-[Gestió de casos COVID-19 als centres educatius](https://canalsalut.gencat.cat/web/.content/_A-Z/C/coronavirus-2019-ncov/material-divulgatiu/gestio-casos-centres-educatius.pdf), Dept. de Salut, Generalitat de Catalunya, 9 de setembre de 2020.
+[Gestió de casos COVID-19 als centres educatius](https://documents.espai.educacio.gencat.cat/IPCNormativa/Protocol-Gestio-casos-rev.pdf),
+Dept. de Salut, Generalitat de Catalunya, 9 de setembre de 2020.
 ]
 
 ---
@@ -65,26 +64,26 @@ class: title-slide, middle, center
 ## What&#39;s a software program
 
 * Building an algorithm consists of (1) discovering which elementary actions have
-to occur and (2) how they should be organised throughout time, to obtain the result.
-
+  to occur and (2) how they should be organised throughout time, to obtain the
+  result.  
+  &amp;nbsp;&amp;nbsp;
 --
 
 * Such an exercise requires:
-
-  * Ability for abstract thought and procedural abstraction at different levels.
+  * Ability for **abstract thought** and **procedural abstraction** at
+    different levels.
   * Using a language with precise syntax and notation.
   * Problem solving.
-
-* Abstraction: focus attention on the main problem, ignoring
-lower-level details.
-
-* Procedural abstraction: understand what a procedure should do
-without knowing exactly it how does it.
-
+* **Abstraction:** focus attention on the main problem, ignoring
+  lower-level details.  
+  &amp;nbsp;&amp;nbsp;
+* **Procedural abstraction:** understand what a procedure should do
+  without knowing exactly it how does it.  
+  &amp;nbsp;&amp;nbsp;
 --
 
 * Writing a software program is implementating an algorithm in a
-specific programming language.
+  specific programming language.
 
 ---
 
@@ -92,42 +91,38 @@ specific programming language.
 
 
 * [Literal](https://en.wikipedia.org/wiki/Literal_%28computer_programming%29):
-value that does not change over time, e.g.:
-```
-3.1416, 1, 2, 3, &quot;Hello World!&quot;, ...
-```
-
+  value that does not change over time, e.g.:  
+  &lt;pre&gt;
+  3.1416, 1, 2, 3, &quot;Hello World!&quot;, ...
+  &lt;/pre&gt;
 * [Constant](https://en.wikipedia.org/wiki/Constant_%28computer_programming%29):
-named literal, a value that does not change over time but which we refer to it by a given name, typically written in upper case letters, e.g.:
-```
-PI, A, B, C, ...
-```
-
+  named literal, a value that does not change over time but which we refer to it
+  by a given name, typically written in upper case letters, e.g.:  
+  &lt;pre&gt;
+  PI, A, B, C, ...
+  &lt;/pre&gt;
 * [Variable](https://en.wikipedia.org/wiki/Variable_%28computer_science%29):
-named container storing a value, which may change over time, e.g.:
-```
-x, y, z, i, j, k, ...
-```
-
+  named container storing a value, which may change over time, e.g.:  
+  &lt;pre&gt;
+  x, y, z, i, j, k, ...
+  &lt;/pre&gt;
 * Constant and variable names should consist of letters and/or digits, but
-they should not start with a digit. Underscores are allowed. E.g.:
-```
-x1, y1, A4, result2, sum_of_squares, ...
-```
+  they should not start with a digit. Underscores are allowed. E.g.:  
+  &lt;pre&gt;
+  x1, y1, A4, result2, sum_of_squares, ...
+  &lt;/pre&gt;
 
 ---
 
 ## Assignments
 
 * [Assignment](https://en.wikipedia.org/wiki/Assignment_%28computer_science%29):
-statement that sets the value of a variable using an operator, typically `=`, for
-instance:
-
-```
-x = 1
-x = 2
-```
-
+  statement that sets the value of a variable using an operator, `=` in Python,
+  for instance:  
+  &lt;pre&gt;
+  x = 1
+  x = 2
+  &lt;/pre&gt;
 * In an assignment, the left-hand side of the assignment operator is always a
 variable, while the right-hand side is what we want to assign into the variable.
 ![:scale 40%](data:image/png;base64,#img/assignment.jpg)
@@ -139,22 +134,18 @@ class: small-table
 ## Expressions
 
 * [Expression](https://en.wikipedia.org/wiki/Expression_%28computer_science%29):
-syntactically correct specification of one or more operations over any given set
-of literals, constants, variables or functions. E.g.:
-
-```
-1 + 1
-x + 2
-y / 2
-```
-
-* The right-hand side of an assignment can be an expression:
-
-```
-x = x + 1
-y = ( log(100) - x ) / 3
-```
-
+  syntactically correct specification of one or more operations over any given
+  set of literals, constants, variables or functions. E.g.:  
+  &lt;pre&gt;
+  1 + 1
+  x + 2
+  y / 2
+  &lt;/pre&gt;
+* The right-hand side of an assignment can be an expression:  
+  &lt;pre&gt;
+  x = x + 1
+  y = ( log(100) - x ) / 3
+  &lt;/pre&gt;
 * Arithmetic operators
 
 |   Operator           |  Example  |  Result |
@@ -246,9 +237,9 @@ two code blocks below.
   b = 7
   c = (a * b) + 1
   &amp;nbsp;&amp;nbsp;
-  if a % 2 == 0:
+  if a % 2 == 0 :
     print(&quot;even&quot;)
-  else:
+  else :
     print(&quot;odd&quot;)
   &lt;/pre&gt;
 * What is going to print on the terminal window the previous code block,
@@ -272,9 +263,21 @@ two code blocks below.
 
 ---
 
+## Problem solving
+
+* Problem:
+  &gt; Write a program in Python that sums the first 10 natural numbers.
+--
+
+* Schematic approach:
+
+![:scale 65%](data:image/png;base64,#img/sum1to10.png)
+
+---
+
 ## Control flow
 
-* How to figure out an iterative control flow from scratch:
+* Implementation of the schematic approach:
   &lt;pre&gt;
   i = 0  ## initial condition: should happen before looping
   s = 0  ## initial condition: should happen before looping
@@ -284,16 +287,6 @@ two code blocks below.
   &amp;nbsp;&amp;nbsp;
   print(s)
   &lt;pre&gt;
-
----
-
-## Problem solving
-
-* Problem:
-  &gt; Write a program in Python that sums the first 10 natural numbers.
-* Schematic approach:
-
-![:scale 65%](data:image/png;base64,#img/sum1to10.png)
 
 ---
 

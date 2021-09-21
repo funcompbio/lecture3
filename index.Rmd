@@ -41,27 +41,26 @@ class: title-slide, middle, center
 ## What's an algorithm
 
 * **Action**: an event that takes place in a finite period of time and produces
-  an expected and well-defined result.
-
+  an expected and well-defined result.  
+  &nbsp;&nbsp;
 --
 
-* **Information**: anything we can observe or find out about an action.
-
+* **Information**: anything we can observe or find out about an action.  
+  &nbsp;&nbsp;
 --
 
-* **State**: the information available at a given time point.
-
+* **State**: the information available at a given time point.  
+  &nbsp;&nbsp;
 --
 
 * **Algorithm**: sequence of actions starting at an initial state and ending at
   an end state, in which we obtain the result.
-
 --
 
-![:scale 60%](img/gestiocasoscovid19.png)
-
+![:scale 55%](img/gestiocasoscovid19.png)
 .footer[
-[Gestió de casos COVID-19 als centres educatius](https://canalsalut.gencat.cat/web/.content/_A-Z/C/coronavirus-2019-ncov/material-divulgatiu/gestio-casos-centres-educatius.pdf), Dept. de Salut, Generalitat de Catalunya, 9 de setembre de 2020.
+[Gestió de casos COVID-19 als centres educatius](https://documents.espai.educacio.gencat.cat/IPCNormativa/Protocol-Gestio-casos-rev.pdf),
+Dept. de Salut, Generalitat de Catalunya, 9 de setembre de 2020.
 ]
 
 ---
@@ -69,26 +68,26 @@ class: title-slide, middle, center
 ## What's a software program
 
 * Building an algorithm consists of (1) discovering which elementary actions have
-to occur and (2) how they should be organised throughout time, to obtain the result.
-
+  to occur and (2) how they should be organised throughout time, to obtain the
+  result.  
+  &nbsp;&nbsp;
 --
 
 * Such an exercise requires:
-
-  * Ability for abstract thought and procedural abstraction at different levels.
+  * Ability for **abstract thought** and **procedural abstraction** at
+    different levels.
   * Using a language with precise syntax and notation.
   * Problem solving.
-
-* Abstraction: focus attention on the main problem, ignoring
-lower-level details.
-
-* Procedural abstraction: understand what a procedure should do
-without knowing exactly it how does it.
-
+* **Abstraction:** focus attention on the main problem, ignoring
+  lower-level details.  
+  &nbsp;&nbsp;
+* **Procedural abstraction:** understand what a procedure should do
+  without knowing exactly it how does it.  
+  &nbsp;&nbsp;
 --
 
 * Writing a software program is implementating an algorithm in a
-specific programming language.
+  specific programming language.
 
 ---
 
@@ -96,42 +95,38 @@ specific programming language.
 
 
 * [Literal](https://en.wikipedia.org/wiki/Literal_%28computer_programming%29):
-value that does not change over time, e.g.:
-```
-3.1416, 1, 2, 3, "Hello World!", ...
-```
-
+  value that does not change over time, e.g.:  
+  <pre>
+  3.1416, 1, 2, 3, "Hello World!", ...
+  </pre>
 * [Constant](https://en.wikipedia.org/wiki/Constant_%28computer_programming%29):
-named literal, a value that does not change over time but which we refer to it by a given name, typically written in upper case letters, e.g.:
-```
-PI, A, B, C, ...
-```
-
+  named literal, a value that does not change over time but which we refer to it
+  by a given name, typically written in upper case letters, e.g.:  
+  <pre>
+  PI, A, B, C, ...
+  </pre>
 * [Variable](https://en.wikipedia.org/wiki/Variable_%28computer_science%29):
-named container storing a value, which may change over time, e.g.:
-```
-x, y, z, i, j, k, ...
-```
-
+  named container storing a value, which may change over time, e.g.:  
+  <pre>
+  x, y, z, i, j, k, ...
+  </pre>
 * Constant and variable names should consist of letters and/or digits, but
-they should not start with a digit. Underscores are allowed. E.g.:
-```
-x1, y1, A4, result2, sum_of_squares, ...
-```
+  they should not start with a digit. Underscores are allowed. E.g.:  
+  <pre>
+  x1, y1, A4, result2, sum_of_squares, ...
+  </pre>
 
 ---
 
 ## Assignments
 
 * [Assignment](https://en.wikipedia.org/wiki/Assignment_%28computer_science%29):
-statement that sets the value of a variable using an operator, typically `=`, for
-instance:
-
-```
-x = 1
-x = 2
-```
-
+  statement that sets the value of a variable using an operator, `=` in Python,
+  for instance:  
+  <pre>
+  x = 1
+  x = 2
+  </pre>
 * In an assignment, the left-hand side of the assignment operator is always a
 variable, while the right-hand side is what we want to assign into the variable.
 ![:scale 40%](img/assignment.jpg)
@@ -143,22 +138,18 @@ class: small-table
 ## Expressions
 
 * [Expression](https://en.wikipedia.org/wiki/Expression_%28computer_science%29):
-syntactically correct specification of one or more operations over any given set
-of literals, constants, variables or functions. E.g.:
-
-```
-1 + 1
-x + 2
-y / 2
-```
-
-* The right-hand side of an assignment can be an expression:
-
-```
-x = x + 1
-y = ( log(100) - x ) / 3
-```
-
+  syntactically correct specification of one or more operations over any given
+  set of literals, constants, variables or functions. E.g.:  
+  <pre>
+  1 + 1
+  x + 2
+  y / 2
+  </pre>
+* The right-hand side of an assignment can be an expression:  
+  <pre>
+  x = x + 1
+  y = ( log(100) - x ) / 3
+  </pre>
 * Arithmetic operators
 
 |   Operator           |  Example  |  Result |
@@ -250,9 +241,9 @@ two code blocks below.
   b = 7
   c = (a * b) + 1
   &nbsp;&nbsp;
-  if a % 2 == 0:
+  if a % 2 == 0 :
     print("even")
-  else:
+  else :
     print("odd")
   </pre>
 * What is going to print on the terminal window the previous code block,
@@ -276,9 +267,21 @@ two code blocks below.
 
 ---
 
+## Problem solving
+
+* Problem:
+  > Write a program in Python that sums the first 10 natural numbers.
+--
+
+* Schematic approach:
+
+![:scale 65%](img/sum1to10.png)
+
+---
+
 ## Control flow
 
-* How to figure out an iterative control flow from scratch:
+* Implementation of the schematic approach:
   <pre>
   i = 0  ## initial condition: should happen before looping
   s = 0  ## initial condition: should happen before looping
@@ -288,16 +291,6 @@ two code blocks below.
   &nbsp;&nbsp;
   print(s)
   <pre>
-
----
-
-## Problem solving
-
-* Problem:
-  > Write a program in Python that sums the first 10 natural numbers.
-* Schematic approach:
-
-![:scale 65%](img/sum1to10.png)
 
 ---
 
