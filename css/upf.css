@@ -99,3 +99,12 @@ blockquote{border-left:5px solid #cccccc;padding-left:1em;margin:1em -1em;font-s
 .small-table th {
   font-size: 70%;
 }
+
+.center-image {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
