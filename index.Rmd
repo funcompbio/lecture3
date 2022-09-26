@@ -34,7 +34,7 @@ class: title-slide, middle, center
 ## Fundamentals of Computational Biology
 ### BSc on Human Biology
 ### UPF School of Health and Life Sciences
-### Academic Year 2021-2022
+### Academic Year 2022-2023
 
 ---
 
@@ -165,19 +165,20 @@ class: small-table
 ## Control flow
 
 * When we run an algorithm, there is a flow of actions being executed after
-one another.
-
+  one another.  
+  &nbsp;&nbsp;
 * The course of the flow of execution depends on the so-called
-[control flow](https://en.wikipedia.org/wiki/Control_flow) statements.
-
+  [control flow](https://en.wikipedia.org/wiki/Control_flow) statements.  
+  &nbsp;&nbsp;
 * There are three main types of control flow statements:
-
-  * Sequential: actions are executed in a particular order.
-
-  * Conditional: one or more actions are executed only under a specific condition.
-
-  * Iterative: one or more actions are executed multiple times until a specific condition is met.
-
+  * Sequential: actions are executed in a particular order.  
+    &nbsp;&nbsp;
+  * Conditional: one or more actions are executed only under a specific
+    condition.  
+    &nbsp;&nbsp;
+  * Iterative: one or more actions are executed multiple times until a specific
+    condition is met.  
+  &nbsp;&nbsp;
 * In the next slides we will be using Python syntax to illustrate these
   control flow statements.
 
@@ -246,8 +247,38 @@ two code blocks below.
   else :
     print("odd")
   </pre>
-* What is going to print on the terminal window the previous code block,
-  "even" or "odd"?
+* Code blocks associated with an `if` statement are defined by
+  [whitespace](https://en.wikipedia.org/wiki/Whitespace_character)
+  characters beginning each line of the associated code block. This
+  is known in computer programming as
+  [indentation](https://en.wikipedia.org/wiki/Indentation_style).
+  Other programming languages (e.g.,
+  [C](https://en.wikipedia.org/wiki/C_%28programming_language%29),
+  [Perl](https://en.wikipedia.org/wiki/Perl)
+  or [JavaScript](https://en.wikipedia.org/wiki/JavaScript)) use
+  curly braces (`{` and `}`) to define code blocks.  
+  &nbsp;&nbsp;
+* Programming languages, such as Python, which use indentation
+  to define code blocks are said to adhere to the  
+  [off-side rule](https://en.wikipedia.org/wiki/Off-side_rule).  
+
+---
+
+## Control flow
+
+* Conditional control flow, also known as an "if statement":  
+  <pre>
+  a = 4
+  b = 7
+  c = (a * b) + 1
+  &nbsp;&nbsp;
+  if a % 2 == 0 :
+    print("even")
+  else :
+    print("odd")
+  </pre>
+* What is going to print on the terminal window the previous
+  Python code "even" or "odd"?
 
 ---
 
@@ -270,18 +301,18 @@ two code blocks below.
 ## Problem solving
 
 * Problem:  
-
+  &nbsp;&nbsp;
   _"Write a program in Python that sums the first 10 natural numbers."_  
+  &nbsp;&nbsp;
 --
-
   _"Write a program in Python that calculates the incidence of COVID19."_  
+  &nbsp;&nbsp;
 --
-
   _"Write a program in Python that finds DNA mutations associated with cancer."_  
+  &nbsp;&nbsp;
 --
-
 .pull-left[
-  &nbsp;_"Write a program in Python that stiches together data collected from
+  _"Write a program in Python that stiches together data collected from
   telescopes around the globe to produce an image of a black hole."_
 
   .footer[
@@ -297,8 +328,8 @@ two code blocks below.
 
 ## Problem solving
 
-* Problem:
-
+* Problem:  
+  &nbsp;&nbsp;
   _"Write a program in Python that sums the first 10 natural numbers."_
 
 --
@@ -318,8 +349,8 @@ two code blocks below.
 
 ## Problem solving
 
-* Problem:
-
+* Problem:  
+  &nbsp;&nbsp;
   _"Write a program in Python that sums the first 10 natural numbers."_
 
 .pull-left[
@@ -335,8 +366,8 @@ two code blocks below.
 
 ## Problem solving
 
-* Problem:
-
+* Problem:  
+  &nbsp;&nbsp;
   _"Write a program in Python that sums the first 10 natural numbers."_  
 
 .pull-left[
@@ -355,8 +386,8 @@ two code blocks below.
 
 ## Problem solving
 
-* Problem:
-
+* Problem:  
+  &nbsp;&nbsp;
   _"Write a program in Python that sums the first 10 natural numbers."_  
   &nbsp;&nbsp;
 * Schematic approach:
@@ -382,8 +413,8 @@ two code blocks below.
 
 ## Concluding remarks
 
-* Spaces (indentation) and newlines are important in Python to define control
-  flow statements.  
+* Spaces ([indentation](https://en.wikipedia.org/wiki/Indentation_style))
+  and newlines are important in Python to define control flow statements.  
   &nbsp;&nbsp;
 --
 
@@ -411,4 +442,4 @@ two code blocks below.
   &nbsp;&nbsp;
 --
 
-* The only way to learn problem solving is solving problems.
+* The only way to learn problem solving is by solving problems.
