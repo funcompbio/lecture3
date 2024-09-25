@@ -26,15 +26,15 @@ class: title-slide, middle, center
 
 ## Robert Castelo
 [robert.castelo@upf.edu](mailto:robert.castelo@upf.edu)
-### Dept. of Experimental and Health Sciences
+### Dept. of Medicine and Life Sciences
 ### Universitat Pompeu Fabra
 
 <br>
 
 ## Fundamentals of Computational Biology
 ### BSc on Human Biology
-### UPF School of Health and Life Sciences
-### Academic Year 2023-2024
+### UPF School of Medicine and Life Sciences
+### Academic Year 2024-2025
 
 ---
 
@@ -113,7 +113,7 @@ Image from "How to track changes in Microsoft Word without going insane".
 ![:scale 60%](img/centralizedVCS.png)
 
 .footer[
-Fig. 2 from [S. Chacon and B. Straub. _Pro Git_, Apress](https://git-scm.com/book/en/v2).
+Fig. 2 from [S. Chacon and B. Straub. _Pro Git_, Apress](https://git-scm.com/book).
 ]
 
 ---
@@ -380,7 +380,7 @@ Fig. 16 from [S. Chacon and B. Straub. _Pro Git_, Apress](https://git-scm.com/bo
   * **Follow** updates from other users.
   * **Stargaze** repositories from other users.
 * According to its [Wikipedia page](https://en.wikipedia.org/wiki/GitHub),
-  GitHub has as of January 2023, over 100 million users and more than 372 million
+  GitHub has as of January 2023, over 100 million users and more than 420 million
   repositories, making it the largest host of source code in the world.
 
 ---
@@ -394,7 +394,7 @@ Fig. 16 from [S. Chacon and B. Straub. _Pro Git_, Apress](https://git-scm.com/bo
 * Following the original git implementation, the default branch at GitHub was
   called **master**.  
   &nbsp;&nbsp;
-* On past October 1st, 2020, GitHub started to
+* On October 1st, 2020, GitHub started to
   [rename](https://github.com/github/renaming) the default branch from _master_
   to **main** to use a more inclusive term that avoids any association with
   slavery. You can read more about this in the article
