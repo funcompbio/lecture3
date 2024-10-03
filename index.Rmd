@@ -5,6 +5,7 @@
     xaringan::moon_reader:
       nature:
         beforeInit: js/macros.js
+        countIncrementalSlides: false
       self_contained: true
       css: [default, default-fonts, ninjutsu, css/upf.css]
       seal: false
