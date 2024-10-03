@@ -1918,7 +1918,9 @@ Fig. 16 from [S. Chacon and B. Straub. _Pro Git_, Apress](https://git-scm.com/bo
   var url = this;
   return '<img src="' + url + '" style="width: ' + percentage + '" />';
 };</script>
-<script>var slideshow = remark.create();
+<script>var slideshow = remark.create({
+"countIncrementalSlides": false
+});
 if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
   window.dispatchEvent(new Event('resize'));
 });
